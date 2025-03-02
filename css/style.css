@@ -1,0 +1,157 @@
+/*reset basico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*arreglos generales*/
+body{
+    background-color: hsla(276, 62%, 34%, 1);
+    background-image: radial-gradient(circle at 96% 61%, hsla(312, 65%, 43%, 1) 7%, transparent 54%), radial-gradient(circle at 35% 15%, rgb(142, 35, 148) 7%, transparent 54%), radial-gradient(circle at 58% 11%, hsla(278, 57%, 53%, 1) 7%, transparent 54%);
+    background-blend-mode: normal, normal, normal, normal; 
+}
+*{
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+/*header*/
+.barra{
+    font-size: 40px;
+    background-color: rgb(188, 18, 222);
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 200px;
+    grid-template-rows: 50px;
+    justify-content: center;
+}
+.menu{
+   display: flex;
+   justify-content: end;
+   margin-right: 5%;
+}
+
+.nav-item{
+    padding: 1%;
+    
+}
+.nav-link{
+    transition: color 0.3s ease-in-out, border-bottom 0.5 ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+}
+.nav-link:hover{
+    color: rgb(3, 149, 3);
+    border-bottom: 2px solid rgb(3, 149, 3);
+}
+.marca{
+    width: 200px;
+    height: auto;
+
+}
+
+.boton-carrito{
+  border: none;
+  outline: 1px dotted rgb(37, 37, 37);
+  outline-offset: -4px;
+  cursor: pointer;
+  background: hsl(0deg 0% 75%);
+  box-shadow:
+    inset -1px -1px #292929,
+    inset 1px 1px #fff,
+    inset -2px -2px rgb(158, 158, 158),
+    inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+.boton-carrito:active {
+    box-shadow:
+      inset -1px -1px #fff,
+      inset 1px 1px #292929,
+      inset -2px -2px #ffffff,
+      inset 2px 2px rgb(158, 158, 158);
+  }
+/*main*/
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 60ex);
+    grid-gap: 2%;
+    justify-items: center;
+    align-items: center;
+
+}
+.gif{
+    display: flex;
+    width: 200px;
+    height: auto;
+    justify-content: right;
+    align-content: baseline;
+    padding-top: 2%;
+}
+.producto{
+    
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: rgb(3, 149, 3) ;
+}
+.titulos{
+    font-size: 50px;
+    padding: 20px ; 
+}
+.imagen{
+    width: 40ex;
+    height: 40ex;
+    border-radius: 5%;
+    
+}
+.texto{
+    
+    font-size: 20px;
+    padding-left: 7px;
+}
+.categoria{
+    font-size: 17px;
+    margin: 40px;
+}
+.subtitulos{
+    font-size: 30px;
+    margin: 1%
+}
+.map{
+    padding: 30px;
+}
+/*footer*/
+footer{
+    background-color: darkgreen;
+    padding: 10px 30px;
+    position: relative;
+    margin-top: 10%;
+   
+}
+.copy{
+    background-color: aliceblue;
+    padding: 30px 10px;
+    
+}
+.logo{
+    width: 30px;
+    height: auto; 
+    
+}
+.link{
+    display: flex;
+    font-size: 30px; 
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    
+}
