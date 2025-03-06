@@ -17,11 +17,12 @@
                 </a>
             </div>
             <ul class="menu">
-                <li class="nav-item"><a href="remeras.html" class="nav-link">REMERAS</a></li>
-                <li class="nav-item"><a href="accesorios.html" class="nav-link">ACCESORIOS</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                <li class="navegacion"><a href="remeras.html" class="enlace-menu">REMERAS</a></li>
+                <li class="navegacion"><a href="accesorios.html" class="enlace-menu">ACCESORIOS</a></li>
+                <li class="navegacion"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
+                <li><a href="carrito.html"><button class="boton-carrito">CARRITO (0)</button></a></li>
             </ul>
-           <button class="boton-carrito"> <a href="carrito.html">CARRITO (0)</a></button>
+          
         </nav>
         </header>
 <section>
@@ -31,8 +32,8 @@
     
     <h1>Carrito de Compras</h1>
     <div>
-        <table>
-            <thead>
+        <table class="carrito">
+            <thead class="carrito-head">
                 <tr>
                     <th>Producto</th>
                     <th>Precio</th>
@@ -40,7 +41,7 @@
                     <th>Subtotal</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="carrito-body">
                 <tr>
                     <td>remera</td>
                     <td>$20.00</td>
@@ -55,15 +56,26 @@
                 </tr>
             </tbody>
         </table>
-        <div>Total: $50.00</div>
-        <button class="Compra">Finalizar Compra</button>
+    </div>
+    <section class="total">   
+        <button class="compra">
+            Finalizar Compra
+            <span class="monto">Total: $50.00</span>
+        </button>
+    </section>
 </main>
 <footer>
-    <ul class="link">
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/logo_ig.png" alt="instagram logo" class="logo">INSTAGRAM</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/logo_facebook.png" alt="facebook logo" class="logo">FACEBOOK</a></li>
-        <li><a href="https://www.x.com/" target="_blank"><img src="./img/logo_X.png" alt="x Logo" class="logo"> X</a></li>
-    </ul>
+    <section class="info">
+        <div>
+            <label for="email" class="recibir-oferta">¡Recibí las mejores ofertas!</label>
+            <input type="text" name="email" id="email" placeholder="ingrese su email" required class="e-mail">
+        </div>
+        <ul class="otras-redes">
+            <li><a href="https://www.instagram.com/" target="_blank" class="redes"><img src="./img/logo_ig.png" alt="instagram logo" class="logo"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" class="redes"><img src="./img/logo_facebook.png" alt="facebook logo" class="logo"></a></li>
+            <li><a href="https://www.x.com/" target="_blank" class="redes"><img src="./img/logo_X.png" alt="x Logo" class="logo"></a></li>
+        </ul>
+    </section>
     <p class="copy">&copy;  Copyright - 2025 - 2031 www.urbancrow.com.ar, TODOS LOS DERECHOS RESERVADOS. Las fotos contenidas en este site, el logotipo y las marcas son propiedad de www.urbancrow.com.ar y/o de sus respectivos titulares. Está prohibida la reproducción total o parcial, sin la expresa autorización de la administradora de la tienda virtual</p>
 </footer>
 </body>
