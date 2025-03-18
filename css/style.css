@@ -202,15 +202,22 @@ ul{
     }
 }
 /*index*/
-/*despues le meto animacion a esto*/
-.carrusel{
+.contenedor-slider{
+    width: 100vw;
     display: flex;
-    gap: 5px;
-    overflow-x: scroll;
-    width: 95%;
-    scroll-snap-type: x mandatory;
-    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
 }
+.slider{
+    width: 99vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
 /*contacto*/
 .informacion-tienda{
     display: flex;
