@@ -1,0 +1,111 @@
+@import "./utilidades/mixin"; 
+@import "./utilidades/variables";
+@import "./utilidades/extend";
+
+.barra {
+    font-size: 40px;
+    background-color: rgb(188, 18, 222);
+    padding: 20px 40px;
+    @include flex-avanzado(space-between, center);
+}
+
+.menu {
+    @include flex-avanzado(flex-end, center);
+}
+
+.navegacion {
+    padding-inline: 3%;
+}   
+
+    .contedor-enlace-menu {
+    @extend %flex-basico;
+    flex-direction: row;
+    margin-right: 3vw;
+}
+        
+            .enlace-menu {
+                background-color: rgb(3, 149, 3);
+                padding: 15px 10px;
+                border: 3px solid black;
+                cursor: pointer;
+                @include redondeado-box(25px, 5px 5px 0px black);
+                font-size: clamp(18px, 2vw, 25px);
+                width: clamp(120px, 17vw, 200px);
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: rgb(2, 120, 2);
+                }
+
+                &:active {
+                    @extend %sombra-boton;
+                }
+            }
+
+.marca {
+    width: 200px;
+    height: auto;
+        }
+
+            .contenedor-boton-carrito {
+                @extend %flex-basico;
+                height: 8vh;
+}
+
+            .boton-carrito {
+                @extend %flex-basico;
+                @extend %boton-basico;
+    padding: 15px 30px;
+                width: clamp(120px, 17vw, 200px);
+                text-align: center;
+                transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($color-fondo, 10%);
+    }
+
+                &:active {
+                    @extend %sombra-boton;
+                }
+            }
+
+@media (max-width: 768px) {
+    .barra {
+        font-size: 30px;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .enlace-menu {
+        font-size: 20px;
+        width: 70%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .boton-carrito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vh 10vw;
+        margin-top: 7vw;
+        max-width: 80%;
+    }
+
+    .contenedor-marca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-bottom: 1vh;
+    }
+}

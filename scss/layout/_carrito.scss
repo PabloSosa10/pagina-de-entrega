@@ -1,0 +1,71 @@
+@import "./utilidades/mixin"; 
+@import "./utilidades/variables";
+@import "./utilidades/extend";
+
+.carrito {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; // Evita el desbordamiento lateral
+}
+
+.carrito-head {
+    background-color: $color-fondo;
+    color: white;
+}
+
+.carrito th, .carrito td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    max-width: 100%;  
+    word-break: break-word; 
+}
+
+.compra {
+    @extend %boton-basico;
+    padding: 15px 30px;
+    margin: 5% auto;
+    width: 17vw;
+    display: block; 
+}
+
+.compra:active {
+    @extend %sombra-boton;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5%;
+}
+
+@media (max-width: 768px) {
+    .carrito {
+        margin-top: 2vh;
+    }
+
+    .total {
+        justify-content: center;
+        margin: 3%;
+    }
+
+    .compra {
+        width: 55vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .monto, .texto-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .carrito-body {
+        height: auto;
+    }
+}

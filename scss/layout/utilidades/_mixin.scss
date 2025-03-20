@@ -1,0 +1,15 @@
+@mixin flex-avanzado ($justifyValor,$alignValor){
+    display: flex;
+    justify-content: $justifyValor;
+    align-items: $alignValor;
+}
+    
+@mixin direccion-alineada ($direccion, $alineado, ){
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $alineado;
+}
+@mixin redondeado-box($radius: 10px, $shadow: 5px 5px 0px black) {
+    border-radius: $radius;
+    box-shadow: $shadow;
+  }

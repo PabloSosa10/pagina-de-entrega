@@ -1,0 +1,28 @@
+@import "./utilidades/mixin";
+@import "./utilidades/variables";
+@import "./utilidades/extend";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-fondo;
+    background-image: radial-gradient(circle at 96% 61%, hsla(312, 65%, 43%, 1) 7%, transparent 54%), radial-gradient(circle at 35% 15%, rgb(142, 35, 148) 7%, transparent 54%), radial-gradient(circle at 58% 11%, hsla(278, 57%, 53%, 1) 7%, transparent 54%),radial-gradient(circle at 26% 61%, hsla(312, 65%, 43%, 1) 7%, transparent 54%) ;
+    background-blend-mode: normal, normal, normal, normal; 
+}
+*{
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none !important;
+    color: $color-texto !important;
+}
+ul{
+    list-style: none;
+}

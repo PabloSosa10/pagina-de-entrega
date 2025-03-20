@@ -1,0 +1,99 @@
+@import "./utilidades/mixin"; 
+@import "./utilidades/variables";
+@import "./utilidades/extend";
+
+footer {
+    background-color: $color-footer;
+    padding: 10px 30px;
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    overflow-x: hidden
+}
+
+.copy {
+    background-color: aliceblue;
+    padding: 30px 10px;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.logo {
+    width: 30px;
+    height: auto; 
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4vh;
+    width: 100%;
+}
+
+.e-mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30vw;
+    height: 7vh;
+    max-width: 100%;
+}
+
+.otras-redes {
+    display: flex;
+    justify-content: center;
+    margin-left: 12vw;
+}
+
+.redes {
+    display: flex;
+    justify-content: end;
+    margin: 0 1vw;
+    padding: 15px;
+}
+
+.redes:hover {
+    background-color: aliceblue;
+    border-radius: 6px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.recibir-oferta {
+    white-space: nowrap;
+    padding: 1vw 1vh;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        overflow-x: hidden;
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .otras-redes {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .e-mail {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .recibir-oferta {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
+    }
+}

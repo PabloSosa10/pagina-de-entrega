@@ -1,0 +1,26 @@
+%flex-basico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%boton-basico{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px black;
+    font-size: 25px;
+}
+%sombra-boton{
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+%grid-catalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 60ex);
+    justify-items: center;
+    align-items: center;
+}

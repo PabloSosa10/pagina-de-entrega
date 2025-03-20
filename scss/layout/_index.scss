@@ -1,0 +1,48 @@
+@import "./utilidades/mixin"; 
+@import "./utilidades/variables";
+@import "./utilidades/extend";
+
+.imagen-slider{
+    width: 40ex;
+    height: 40ex;
+    border-radius: 5%;
+}
+.contenedor-slider{
+    width: 99vw;
+    @extend %flex-basico;
+
+    .slider{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        animation: desplazar 40s linear infinite;
+        
+    }
+    @keyframes desplazar{
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+    }
+}
+
+
+.catalogo-principal{
+    @extend %grid-catalogo;
+}
+@media (max-width: 768px){
+    .catalogo-principal{
+        grid-template-columns: 1fr;
+        margin-top: 10vh;
+        grid-gap: 3vh;
+    }
+    .imagen{
+        width: 49ex;
+        height: 49ex;
+    }
+    .slider{
+        animation:desplazar 20s linear infinite;
+    }
+}
