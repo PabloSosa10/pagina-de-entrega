@@ -12,24 +12,27 @@
 <body>
     <header>
         <nav class="barra">
-            <div>
-                <a href="index.html"><img src="./img/Urban-Crow-4-2-2025.png" alt="Logo" class="marca"> 
-                </a>
+            <div class="contenedor-marca">
+                <a href="index.html"><img src="./img/Urban-Crow-4-2-2025.png" alt="Logo" class="marca"> </a>
             </div>
             <ul class="menu">
+            <div class="contedor-enlace-menu">
                 <li class="navegacion"><a href="remeras.html" class="enlace-menu">REMERAS</a></li>
                 <li class="navegacion"><a href="accesorios.html" class="enlace-menu">ACCESORIOS</a></li>
                 <li class="navegacion"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
-                <li><a href="carrito.html"><button class="boton-carrito">CARRITO (0)</button></a></li>
+            </div>
+            <div class="contenedor-boton-carrito">
+                <li><a href="carrito.html"><button class="boton-carrito">CARRITO</button></a></li>
+            </div>
             </ul>
           
         </nav>
         </header>
-<section>
-    <img src="./img/gif_logo_2.gif" frameborder="0" class="gif"></img>
- </section>
+          
 <main>
-    
+    <div class="contenedor-gif">
+        <img src="./img/gif_logo_2.gif" frameborder="0" class="gif"></img>
+    </div> 
     <h1>Carrito de Compras</h1>
     <div>
         <table class="carrito">
@@ -59,7 +62,7 @@
     </div>
     <section class="total">   
         <button class="compra">
-            Finalizar Compra
+            <span texto-button>Finalizar Compra</span> 
             <span class="monto">Total: $50.00</span>
         </button>
     </section>

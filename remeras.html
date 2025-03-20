@@ -12,39 +12,41 @@
 <body>
     <header>
         <nav class="barra">
-            <div>
+            <div class="contenedor-marca">
                 <a href="index.html"><img src="./img/Urban-Crow-4-2-2025.png" alt="Logo" class="marca"> 
                 </a>
             </div>
             <ul class="menu">
-                <li class="navegacion"><a href="remeras.html" class="enlace-menu">REMERAS</a></li>
-                <li class="navegacion"><a href="accesorios.html" class="enlace-menu">ACCESORIOS</a></li>
-                <li class="navegacion"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
-                <li><a href="carrito.html"><button class="boton-carrito">CARRITO</button></a></li>
+                    <li class="navegacion"><a href="remeras.html" class="enlace-menu">REMERAS</a></li>
+                    <li class="navegacion"><a href="accesorios.html" class="enlace-menu">ACCESORIOS</a></li>
+                    <li class="navegacion"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
+                    <li><a href="carrito.html"><button class="boton-carrito">CARRITO</button></a></li>
             </ul>
         </nav>
         </header>
 <section>
-    <img src="./img/gif_logo_2.gif" frameborder="0" class="gif"></img> 
-    <h1 class="titulos">accesorios importados</h1>
+    <div class="contenedor-gif">
+        <img src="./img/gif_logo_2.gif" frameborder="0" class="gif"></img> 
+    </div>
+    <h1 class="titulos">nuestras remeras de marcas</h1>
 </section>
     <section>
         <h2 class="subtitulos">filtrar productos</h2>
-        <form action="#" method="get">
+        <form action="#" method="get" class="selector">
             <label for="modelo" class="categoria">Modelos:</label>
-                <select name="categoria" id="categoria">
+                <select name="categoria" id="categoria" class="valores">
                     <option value="todos">Todas</option>
                     <option value="baby tee">Baby Tee</option>
                     <option value="remera overside">Overside</option>
                 </select>
             <label for="talles" class="categoria">talles:</label>
-            <select name="talle" id="talle" >
-                <option value="s">talle S</option>
-                <option value="m">talle M</option>
-                <option value="l">talle L</option>
-                <option value="xl">talle XL</option>
-            </select>
-            <button type="submit">Buscar</button>
+                <select name="talle" id="talle" class="valores">
+                    <option value="s">talle S</option>
+                    <option value="m">talle M</option>
+                    <option value="l">talle L</option>
+                    <option value="xl">talle XL</option>
+                </select>
+            <button type="submit" class="boton-selector">Buscar</button>
         </form>
     </section>          
     <section class="catalogo">

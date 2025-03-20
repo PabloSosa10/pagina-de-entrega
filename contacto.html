@@ -14,21 +14,25 @@
 <body>
     <header>
         <nav class="barra">
-            <div>
-                <a href="index.html"><img src="./img/Urban-Crow-4-2-2025.png" alt="Logo" class="marca"> 
-                </a>
+            <div class="contenedor-marca">
+                <a href="index.html"><img src="./img/Urban-Crow-4-2-2025.png" alt="Logo" class="marca"></a>
             </div>
             <ul class="menu">
-                <li class="navegacion"><a href="remeras.html" class="enlace-menu">REMERAS</a></li>
-                <li class="navegacion"><a href="accesorios.html" class="enlace-menu">ACCESORIOS</a></li>
-                <li class="navegacion"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
-                <li><a href="carrito.html"><button class="boton-carrito">CARRITO (0)</button></a></li>
+                <div class="contedor-enlace-menu">
+                    <li class="navegacion"><a href="remeras.html" class="enlace-menu">REMERAS</a></li>
+                    <li class="navegacion"><a href="accesorios.html" class="enlace-menu">ACCESORIOS</a></li>
+                    <li class="navegacion"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
+                </div>
+                <div class="contenedor-boton-carrito">
+                    <li><a href="carrito.html"><button class="boton-carrito">CARRITO</button></a></li>
+                </div>
             </ul>
-          
         </nav>
         </header>
 <section>
-    <img src="./img/gif_logo_2.gif" frameborder="0" class="gif"></img> 
+    <div class="contenedor-gif">
+        <img src="./img/gif_logo_2.gif" frameborder="0" class="gif"></img> 
+    </div>
     <h1 class="titulos">contacto</h1>
  </section>
 <main>
@@ -40,12 +44,10 @@
                 <li><a href="https://www.facebook.com/" target="_blank" class="red"><img src="./img/logo_facebook.png" alt="facebook logo" class="icono">FACEBOOK</a></li>
                 <li><a href="https://www.x.com/" target="_blank" class="red"><img src="./img/logo_X.png" alt="x Logo" class="icono"> X</a></li>
             </ul>
+        </div
+        <div class="d-flex" style="height: 300px;">
+            <div class=" d-none d-md-block vr "></div>
         </div>
-
-        <div class="d-flex" style="height: 200px;">
-            <div class="vr"></div>
-        </div>
-
         <div class="mapa-tienda">
         <h2 class="subtitulos">visitanos en nuestra tienda</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9912369787066!2d-58.44884842437844!3d-34.6043830977416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0d95ad77f5%3A0xdd0be977332b24c6!2sAntezana%20247%2C%20C1414%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1737939737272!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa">
