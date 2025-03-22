@@ -218,16 +218,19 @@
   .producto {
     display: flex;
     justify-content: center;
-    width: 81%;
+    width: 86.3%;
     margin: 0;
+  }
+  .contenedor-imagen {
+    width: 100%;
   }
   .titulos {
     font-size: 35px;
     padding: 1vw 1vh;
   }
   .imagen {
-    width: 49ex;
-    height: 49ex;
+    width: 30vw;
+    height: 30vw;
   }
   .texto {
     font-size: 25px;
