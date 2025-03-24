@@ -4,6 +4,16 @@
 
 .catalogo{
     @extend %grid-catalogo;
+
+    .producto{
+    @extend %fondo-cards;
+    
+    .imagen{
+        width: 40ex;
+        height: 40ex;
+        border-radius: 5%;
+        }
+    }
 }
 .gif{
     @include flex-avanzado(right, baseline);
@@ -11,21 +21,12 @@
     height: auto;
     padding-top: 2%;
 }
-.producto{
-    
-    border: 2px solid black;
-    border-radius: 5%;
-    background-color: rgb(3, 149, 3) ;
-}
+
 .titulos{
     font-size: 50px;
     padding: 20px ; 
 }
-.imagen{
-    width: 40ex;
-    height: 40ex;
-    border-radius: 5%;
-}
+
 .texto{
     font-size: 20px;
     padding-left: 7px;
@@ -81,22 +82,27 @@
     .producto{
         display: flex;
         justify-content: center;
-        width: 86.3%;
+        width: 80vw;
+        height: 55vh;
         margin: 0;
-        
-    }
-    .contenedor-imagen{
+
+        .contenedor-imagen{
         width: 100%;
+        height: 80%;
         
+             .imagen{
+                width: 100%;
+                height: 100%;
+            }
+        } 
     }
+    
+    
     .titulos{
         font-size: 35px;
         padding: 1vw 1vh;
     }
-    .imagen{
-        width: 30vw;
-        height: 30vw;
-    }
+  
     .texto{
         font-size: 25px;
     }
