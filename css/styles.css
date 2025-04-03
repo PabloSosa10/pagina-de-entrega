@@ -512,13 +512,14 @@
 }
 
 .carrito {
-  width: 100%;
+  width: 95%;
   max-width: 100%;
   border-collapse: collapse;
   background: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  margin: 7vh 2vw 0 2vw;
 }
 
 .carrito-head {
@@ -531,7 +532,6 @@
   text-align: left;
   border-bottom: 1px solid #ddd;
   max-width: 100%;
-  word-break: break-word;
 }
 
 .compra {
@@ -550,16 +550,18 @@
 @media (max-width: 768px) {
   .carrito {
     margin-top: 2vh;
+    border-radius: 7px;
   }
   .total {
     justify-content: center;
     margin: 3%;
   }
   .compra {
-    width: 55vw;
+    width: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .monto, .texto-button {
     display: flex;
