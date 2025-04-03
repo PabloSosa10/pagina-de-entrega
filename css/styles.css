@@ -360,7 +360,7 @@
     height: 100%;
   }
   .slider {
-    animation: desplazar 20s linear infinite;
+    animation: desplazar 35s linear infinite;
   }
 }
 .boton-formulario {
@@ -537,7 +537,7 @@
 .compra {
   padding: 15px 30px;
   margin: 5% auto;
-  width: 17vw;
+  width: 16vw;
   display: block;
 }
 
@@ -557,7 +557,7 @@
     margin: 3%;
   }
   .compra {
-    width: 60vw;
+    width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
