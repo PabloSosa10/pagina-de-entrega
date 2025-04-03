@@ -56,9 +56,11 @@
 
 @media (max-width: 768px) {
     .catalogo-principal {
-        grid-template-columns: 1fr;
-        margin-top: 10vh;
-        grid-gap: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vh;
+        margin-top: 5vh;
     }
     .producto-principal{
         display: flex;
@@ -73,7 +75,7 @@
 
             .imagen-principal{
             width: 100%;
-            height: 47ex;
+            height: 100%;
             }
         }
     }

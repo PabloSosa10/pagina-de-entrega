@@ -36,21 +36,29 @@
 </section>
     <section>
         <h2 class="subtitulos">filtrar productos</h2>
-        <form action="#" method="get" class="selector">
-            <label for="modelo" class="categoria">Modelos:</label>
-                <select name="categoria" id="categoria" class="valores">
-                    <option value="todos">Todas</option>
-                    <option value="baby tee">Baby Tee</option>
-                    <option value="remera overside">Overside</option>
-                </select>
-            <label for="talles" class="categoria">talles:</label>
-                <select name="talle" id="talle" class="valores">
-                    <option value="s">talle S</option>
-                    <option value="m">talle M</option>
-                    <option value="l">talle L</option>
-                    <option value="xl">talle XL</option>
-                </select>
-            <button type="submit" class="boton-selector">Buscar</button>
+        <form action="#" method="get" class="formulario-main">
+            <div class="selector">
+                <div class="selector-categoria">
+                    <label for="modelo" class="categoria">Modelos:</label>
+                    <select name="categoria" id="categoria" class="valores">
+                        <option value="todos">Todas</option>
+                        <option value="baby tee">Baby Tee</option>
+                        <option value="remera overside">Overside</option>
+                    </select>
+                </div>
+                <div class="selector-categoria">
+                    <label for="talles" class="categoria">talles:</label>
+                    <select name="talle" id="talle" class="valores">
+                        <option value="s">talle S</option> 
+                        <option value="m">talle M</option>
+                        <option value="l">talle L</option>
+                        <option value="xl">talle XL</option>
+                    </select>
+                </div>
+            </div>    
+            <div class="contenedor-boton-selector">
+                <button type="submit" class="boton-selector">Buscar</button>
+            </div>  
         </form>
     </section>          
     <section class="catalogo">

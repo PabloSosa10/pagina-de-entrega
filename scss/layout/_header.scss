@@ -52,22 +52,17 @@
                 height: 8vh;
 }
 
-            .boton-carrito {
-                @extend %flex-basico;
-                @extend %boton-basico;
+.boton-carrito {
+    @extend %flex-basico;
+    @extend %boton-basico;
     padding: 15px 30px;
-                width: clamp(120px, 17vw, 200px);
-                text-align: center;
-                transition: background-color 0.3s ease;
+    width: clamp(120px, 17vw, 200px);
+    text-align: center;
 
-    &:hover {
-        background-color: darken($color-fondo, 10%);
+    &:active {
+        @extend %sombra-boton;
     }
-
-                &:active {
-                    @extend %sombra-boton;
-                }
-            }
+}
 
 @media (max-width: 768px) {
     .barra {
@@ -75,6 +70,7 @@
         flex-direction: column;
         align-items: center;
         padding: 15px;
+        height: 31vh;
     }
 
     .menu {
@@ -83,6 +79,7 @@
         align-items: center;
         text-align: center;
         gap: 10px;
+        margin-bottom: 3vh; 
     }
 
     .enlace-menu {
